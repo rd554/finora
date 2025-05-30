@@ -6,10 +6,7 @@ interface FinancialData {
   emergencyFund: string
   monthlyEmi: string
   categories: {
-    dining: string
-    subscriptions: string
-    groceries: string
-    transport: string
+    [key: string]: string
   }
 }
 
