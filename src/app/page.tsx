@@ -44,7 +44,7 @@ export default function Home() {
     setFinancialData({
       categories: {
         ...categories,
-        [name]: newCategoryValue || 0,
+        [name]: String(newCategoryValue || "0"),
       },
     })
     setNewCategoryName('')
