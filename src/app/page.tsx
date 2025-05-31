@@ -77,7 +77,7 @@ export default function Home() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="income" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="income" className="block text-base font-medium text-gray-700">
                     Monthly Income
                   </label>
                   <input
@@ -88,14 +88,14 @@ export default function Home() {
                     onChange={(e) => setFinancialData({ income: e.target.value })}
                     step={1000}
                     min={0}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400 placeholder:text-sm"
                     placeholder="Enter your monthly income"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="expenses" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="expenses" className="block text-base font-medium text-gray-700">
                     Total Monthly Expenses
                   </label>
                   <input
@@ -106,14 +106,14 @@ export default function Home() {
                     onChange={(e) => setFinancialData({ expenses: e.target.value })}
                     step={1000}
                     min={0}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400 placeholder:text-sm"
                     placeholder="Enter your total expenses"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="emergencyFund" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="emergencyFund" className="block text-base font-medium text-gray-700">
                     Emergency Fund
                   </label>
                   <input
@@ -124,14 +124,13 @@ export default function Home() {
                     onChange={(e) => setFinancialData({ emergencyFund: e.target.value })}
                     step={1000}
                     min={0}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400 placeholder:text-sm"
                     placeholder="Enter your emergency fund amount"
-                    required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="monthlyEmi" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="monthlyEmi" className="block text-base font-medium text-gray-700">
                     Monthly EMIs
                   </label>
                   <input
@@ -142,9 +141,8 @@ export default function Home() {
                     onChange={(e) => setFinancialData({ monthlyEmi: e.target.value })}
                     step={1000}
                     min={0}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400 placeholder:text-sm"
                     placeholder="Enter your monthly EMIs"
-                    required
                   />
                 </div>
               </div>
@@ -155,7 +153,7 @@ export default function Home() {
                   {Object.entries(categories).map(([key, value]) => (
                     <div key={key} className="flex items-center gap-2">
                       <div className="flex-1">
-                        <label htmlFor={key} className="block text-sm font-medium text-gray-700 capitalize">
+                        <label htmlFor={key} className="block text-base font-medium text-gray-700 capitalize">
                           {key}
                         </label>
                         <input
@@ -170,9 +168,8 @@ export default function Home() {
                           }
                           step={100}
                           min={0}
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400 placeholder:text-sm"
                           placeholder={`Enter ${key} expenses`}
-                          required
                         />
                       </div>
                       <button
@@ -189,18 +186,18 @@ export default function Home() {
                 {/* Add Category UI */}
                 <div className="mt-4 flex flex-col sm:flex-row gap-2 items-start sm:items-end">
                   <div>
-                    <label htmlFor="new-category-name" className="block text-sm font-medium text-gray-700">New Category</label>
+                    <label htmlFor="new-category-name" className="block text-base font-medium text-gray-700">New Category</label>
                     <input
                       id="new-category-name"
                       type="text"
                       value={newCategoryName}
                       onChange={e => setNewCategoryName(e.target.value)}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400 placeholder:text-sm"
                       placeholder="Category name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="new-category-value" className="block text-sm font-medium text-gray-700">Amount</label>
+                    <label htmlFor="new-category-value" className="block text-base font-medium text-gray-700">Amount</label>
                     <input
                       id="new-category-value"
                       type="number"
@@ -208,7 +205,7 @@ export default function Home() {
                       step={100}
                       value={newCategoryValue}
                       onChange={e => setNewCategoryValue(e.target.value)}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white text-gray-900 placeholder-gray-400 placeholder:text-sm"
                       placeholder="0"
                     />
                   </div>

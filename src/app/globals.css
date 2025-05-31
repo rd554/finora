@@ -13,4 +13,14 @@
   body {
     @apply bg-gray-50 text-gray-900;
   }
+}
+
+/* Force number input spinners to show on all devices */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: auto;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 } 
