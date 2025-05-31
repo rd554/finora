@@ -9,6 +9,7 @@ Finora is a smart financial coach that analyzes your monthly expense-to-income b
 - 🎭 **Burn Persona Classification**: Get classified into personas like "YOLO Earner" or "Calculated Climber"
 - 📊 **Scenario Simulator**: See the financial impact of saving more, earning less, or spending differently
 - 💡 **Smart Budget Recommendations**: Get AI-suggested category-wise budgets tailored to your income and spending style
+- 📑 **PDF & CSV Bank Statement Upload**: Upload CSV or password-protected PDF bank statements. Finora auto-detects and extracts transactions, converts them to CSV, and autofills your financial dashboard for instant analysis.
 
 ## 🛠️ Tech Stack
 
@@ -64,4 +65,14 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📑 PDF & CSV Bank Statement Upload
+
+- **CSV Upload**: Upload your bank statement in CSV format. Finora will auto-detect columns, extract income and expenses, and analyze your burn risk.
+- **PDF Upload**: Upload a regular or password-protected PDF bank statement. Finora will:
+  - Prompt for a password if needed (all client-side)
+  - Extract and auto-detect the transaction table
+  - Convert transactions to CSV format
+  - Autofill your financial dashboard and run instant analysis
+- **Supported Formats**: Most Indian bank statements with clear date, description, debit, and credit columns. If your PDF is not detected, try exporting as CSV or contact us to add support for your format. 
