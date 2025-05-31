@@ -76,3 +76,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   - Convert transactions to CSV format
   - Autofill your financial dashboard and run instant analysis
 - **Supported Formats**: Most Indian bank statements with clear date, description, debit, and credit columns. If your PDF is not detected, try exporting as CSV or contact us to add support for your format. 
+
+## 📤 Excel Export with Insights & Charts
+
+- **Export to Excel**: Instantly export your financial dashboard to a styled `.xlsx` Excel report.
+- **Sheets Included**:
+  - **Summary**: Key metrics, totals, and AI-generated insights
+  - **Categories**: Expense breakdown by category, with percentage of total expenses (clearly explained)
+  - **Transactions**: Full transaction table
+  - **Trends**: Monthly ratios and coverage, with explanations for each metric
+- **How to Use**:
+  1. Upload your CSV or PDF and review your parsed data
+  2. Click the "Export Excel" button below the dashboard
+  3. Download your report with all insights and explanations included
+- **Privacy**: All processing is done in your browser. No data leaves your device.
+
+Example explanations in the report:
+- _Percentages are calculated as a share of your total monthly expenses._
+- _Emergency Fund Coverage: How many months you can cover your expenses using your emergency fund (Emergency Fund ÷ Monthly Expenses)._ 
