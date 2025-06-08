@@ -24,8 +24,11 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-gray-50 text-gray-900`}>
         {/* Fixed Navbar */}
-        <nav className="fixed top-0 left-0 w-full h-14 bg-white shadow z-50 flex items-center px-6">
+        <nav className="fixed top-0 left-0 w-full h-14 bg-white shadow z-50 flex items-center justify-between px-6">
           <img src="/finora-logo.png" alt="Finora Logo" className="h-10 w-auto" />
+          <a href="https://www.producthunt.com/products/finora?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-finora" target="_blank" rel="noopener noreferrer">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=975162&theme=light&t=1749367183195" alt="Finora - Your AI-powered financial burn risk coach | Product Hunt" style={{ width: '250px', height: '54px' }} width="250" height="54" />
+          </a>
         </nav>
         {/* Main content with top padding for navbar */}
         <main className="min-h-screen pt-16">
